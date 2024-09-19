@@ -1,0 +1,48 @@
+body {
+    display: grid;
+    height: 100vh;
+    grid-template: auto 1fr auto / auto 1fr auto;
+}
+
+header {
+    background: grey;
+    /* padding: 2rem; */
+    grid-column: 1 / 4;
+    padding-top: 3rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: large;
+    font-weight: 400;
+}
+
+main {
+    background: lightgray;
+    grid-column: 1 / 3;
+    padding: 1rem;
+}
+
+aside {
+    background: white;
+    grid-column: 3 / 4;
+    padding: 1rem;
+}
+
+footer {
+    background: gray;
+    padding: 2rem;
+    text-align: center;
+    grid-column: 1 / 4;
+}
