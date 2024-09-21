@@ -106,6 +106,8 @@ p {
 
 main {
     /* background-color: var(--primary-color); */
+    justify-self: center;
+    max-width: 1200px;
     grid-column: 1 / 4;
     padding: 1rem;
     display: grid;
