@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', serif;
+    max-width: 800px;
+    min-width: 300px;
+    margin: auto;
+}
+
+header {
+    background: #003049;
+    color: #EAE2B7;
+    padding: 1rem;
+}
+
+h1,
+h2 {
+    font-family: 'Open Sans', serif;
+}
+
+h2 {
+    margin: 0 auto;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+}
+
+nav {
+    max-width: 800px;
+    margin: 1rem auto;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: #EAE2B7;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "\2716";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: #333;
+    color: #fff;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation a:hover {
+    background-color: #bbb;
+    color: #333;
+    font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+    display: block;
+}
+
+figure {
+    margin: auto;
+    width: 200px;
+    margin: auto;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+
+figcaption {
+    color: #000000;
+    text-align: center;
+}
+
+footer {
+    grid-area: footer;
+    background: #F77F00;
+    color: #000;
+    text-align: center;
+    padding: 1rem;
+}
+
+.temple-images {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    width: 100%;
+    margin: 0 auto;
+}
