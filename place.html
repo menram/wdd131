@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - W3 Assignment: Place - Ricardo Mendoza Ramos</title>
+    <meta name="description" content="Ricardo Mendoza Ramos. Web Fundamentals WDD 131. Week 3 Assignment: Place.">
+    <meta name="author" content="Ricardo Mendoza Ramos">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mayan+Numerals&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Chichen Itza, Yucatan, MeXiCo</h1>
+    </header>
+    <main>
+        <div>
+            <div class="hero">
+                <picture>
+                    <source media="(min-width: 850px)" srcset="images/mexico-high.webp">
+                    <img src="images/mexico-small.webp" alt="Chichen Itza, Yucatan, Mexico">
+                </picture>
+            </div>
+            <div class="data">
+                <h2>Data</h2>
+                <table>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Area:</th>
+                            <td>10 km²</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Population:</th>
+                            <td>50,000</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Capital:</th>
+                            <td>Isla Cerritos</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Languages:</th>
+                            <td>Mayan, Spanish</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Currency:</th>
+                            <td>Cacao Beans</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Time Zone:</th>
+                            <td>CST</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Calling Code:</th>
+                            <td>+52</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Internet TLD:</th>
+                            <td>.mx</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="weather">
+                <h2>Weather</h2>
+                <img src="images/weather.svg" alt="Weather Icon">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Temperature:</th>
+                            <td><span id="temperature">49</span> ℉</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Conditions:</th>
+                            <td>Partly Sunny</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Wind:</th>
+                            <td><span id="windSpeed">6</span> mph</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Wind Chill:</th>
+                            <td><span id="windChill"></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>
+            ©️<span id="currentyear"></span> | Ricardo Mendoza-Ramos | United States of America
+        </p>
+        <p>
+            Last Modified: <span id="lastModified"></span>
+        </p>
+    </footer>
+</body>
+
+</html>
