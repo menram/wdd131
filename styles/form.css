@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', serif;
+    font-size: smaller;
+    display: grid;
+    margin: auto;
+    max-width: 400px;
+}
+
+header,
+footer {
+    background-color: #333333;
+    color: white;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+}
+
+main {
+    background-color: lightgray;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    width: 100%;
+}
+
+select,
+input[type="date"],
+textarea,
+input[type="text"] {
+    width: 100%;
+}
+
+select,
+input {
+    min-height: 2rem;
+}
+
+input[type="submit"] {
+    font-size: large;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.formSection {
+    display: block;
+    font-size: medium;
+    padding-top: 1.5rem;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.features {
+    font-size: medium;
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.italics {
+    font-style: italic;
+    font-size: smaller;
+}
+
+.optional {
+    font-size: smaller;
+}
+
+.counter {
+    font-size: medium;
+    text-align: center;
+}

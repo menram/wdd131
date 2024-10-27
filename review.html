@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Product Review Form - Ricardo Mendoza Ramos</title>
+    <meta name="description"
+        content="Ricardo Mendoza Ramos. Web Foundamentals WDD 131. This page is for the Product Review Form that gets powered via JS.">
+    <meta name="author" content="Ricardo Mendoza Ramos">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body onload="countReviews()">
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <div class="counter">
+            <p>
+                Thank you for your review!
+            </p>
+            <p>
+                <span class="reviewCount"></span> reviews have been submitted.
+            </p>
+        </div>
+    </main>
+    <footer>
+        <p>
+            ©️<span id="currentyear"></span> | Ricardo Mendoza-Ramos | United States of America
+        </p>
+        <p>
+            Last Modified: <span id="lastModified"></span>
+        </p>
+    </footer>
+</body>
+
+</html>

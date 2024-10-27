@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Product Review Form - Ricardo Mendoza Ramos</title>
+    <meta name="description"
+        content="Ricardo Mendoza Ramos. Web Foundamentals WDD 131. This page is for the Product Review Form that gets powered via JS.">
+    <meta name="author" content="Ricardo Mendoza Ramos">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <div>
+                <label class="formSection" for="products">Product Name</label>
+                <select id="products" name="products" required>
+                    <option value="" selected disabled>Choose a Product...</option>
+                </select>
+            </div>
+
+            <span class="formSection">Overall Rating</span>
+            <div class="rating">
+                <input type="radio" id="5stars" name="stars" value="5" required>
+                <label for="5stars">
+                    &star;&star;&star;&star;&star;
+                </label>
+                <input type="radio" id="4stars" name="stars" value="4" required>
+                <label for="4stars">
+                    &star;&star;&star;&star;
+                </label>
+                <input type="radio" id="3stars" name="stars" value="3" required>
+                <label for="3stars">
+                    &star;&star;&star;
+                </label>
+                <input type="radio" id="2stars" name="stars" value="2" required>
+                <label for="2stars">
+                    &star;&star;
+                </label>
+                <input type="radio" id="1stars" name="stars" value="1" required>
+                <label for="1stars">
+                    &star;
+                </label>
+            </div>
+
+            <div>
+                <label class="formSection" for="installationDate">
+                    Date of Installation
+                </label>
+                <input type="date" id="installationDate" name="installationDate" required>
+            </div>
+
+            <div>
+                <span class="formSection">
+                    Which features did you find useful in the product?<br>
+                    <span class="italics">(Check all that apply)</span>
+                </span>
+                <label class="features">
+                    <input type="checkbox" id="feat1" name="feat1" value="durability">Durability
+                </label>
+                <label class="features">
+                    <input type="checkbox" id="feat2" name="feat2" value="easeofuse">Ease of Use
+                </label>
+                <label class="features">
+                    <input type="checkbox" id="feat3" name="feat3" value="performance">Performance
+                </label>
+                <label class="features">
+                    <input type="checkbox" id="feat4" name="feat4" value="design">Design
+                </label>
+            </div>
+
+            <label class="formSection" for="writtenReview">
+                Written Review <span class="optional">(Optional)</span>
+            </label>
+            <textarea id="writtenReview" name="writtenReview" rows="6"></textarea>
+
+            <label class="formSection" for="reviewerName">
+                Your Name <span class="optional">(Optional)</span>
+            </label>
+            <input type="text" id="reviewerName" name="reviewerName">
+
+            <label><input id="submit" type="submit" value="Post Review"></label>
+
+        </form>
+    </main>
+    <footer>
+        <p>
+            ©️<span id="currentyear"></span> | Ricardo Mendoza-Ramos | United States of America
+        </p>
+        <p>
+            Last Modified: <span id="lastModified"></span>
+        </p>
+    </footer>
+</body>
+
+</html>
