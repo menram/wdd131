@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Las Vegas Musts - W6 Project - Ricardo Mendoza Ramos</title>
+    <meta name="description"
+        content="Ricardo Mendoza Ramos. Web Fundamentals WDD 131. Week 6 Project: Las Vegas Musts. This page provides my recommendations of places to visit in the Las Vegas area known as the Las Vegas Outdoors.">
+    <meta name="author" content="Ricardo Mendoza Ramos">
+    <link rel="stylesheet" href="styles/lasvegasmusts.css">
+    <script src="scripts/lasvegasmusts.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mayan+Numerals&family=Tilt+Neon&display=swap"
+        rel="stylesheet">
+</head>
+
+<body onload="loadPage('outdoors')">
+    <header>
+        <h1>Las Vegas Outdoors</h1>
+        <button type="button" id="menu"></button>
+        <nav class="navigation">
+            <a href="lasvegas-strip.html" id="strip" title="strip">Strip</a>
+            <a href="lasvegas-downtown.html" id="downtown" title="downtown">Downtown</a>
+            <a href="#" id="outdoors" title="outdoors">Outdoors</a>
+        </nav>
+    </header>
+    <main>
+        <div id="container">
+            <div class="hero">
+                <picture>
+                    <source media="(min-width: 850px)" srcset="images/lasvegas-outdoors-high.webp">
+                    <img src="images/lasvegas-outdoors-small.webp" loading="lazy"
+                        alt="Las Vegas OutdoorsLas Vegas, Nevada">
+                </picture>
+            </div>
+            <div class="free">
+                <h2>Free Attractions</h2>
+            </div>
+            <div class="money">
+                <h2>Cost Attractions</h2>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>
+            ©️<span id="currentyear"></span> | Ricardo Mendoza-Ramos | United States of America
+        </p>
+        <p>
+            Last Modified: <span id="lastModified"></span>
+        </p>
+        <p>
+            <span class="visitsCount"></span> visits
+        </p>
+    </footer>
+</body>
+
+</html>
